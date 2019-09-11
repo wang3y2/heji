@@ -1,4 +1,4 @@
-|!/bin/sh
+#!/bin/sh
 
 MAINIP=$(ip route get 1 | awk '{print $NF;exit}')
 GATEWAYIP=$(ip route | grep default | awk '{print $3}')
@@ -9,20 +9,20 @@ NETMASK="$(( (value >> 24) & 0xff )).$(( (value >> 16) & 0xff )).$(( (value >> 8
 
 
 clear
-echo "                                                              "
-echo "┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓"
-echo "┃                                                          ┃"
-echo "┃                      懒人专用                            ┃"
-echo "┃                                                          ┃"
-echo "┃  加速系列：Bbr系列、KCPtun、锐速                         ┃"
-echo "┃  代理系列：V2ary、ssr、Tg专用代理、Goflyway              ┃"
-echo "┃  性能测试：superbench、回程线路测试                      ┃"
-echo "┃  监控系列：云监控（status）                              ┃"
-echo "┃  DD系列：傻瓜式一键DD包                                  ┃"
-echo "┃  脚本来源于网络，版权归各位所有                          ┃"
-echo "┃                                                          ┃"
-echo "┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛"
-echo "                                                              "
+echo "                                                           "
+echo "###########################################################"
+echo "#                                                         #"
+echo "#                      懒人专用                           #"
+echo "#                                                         #"
+echo "#  加速系列：Bbr系列、KCPtun、锐速                        #"
+echo "#  代理系列：V2ary、ssr、Tg专用代理、Goflyway             #"
+echo "#  性能测试：superbench、回程线路测试                     #"
+echo "#  监控系列：云监控（status）                             #"
+echo "#  DD系列：傻瓜式一键DD包                                 #"
+echo "#  脚本来源于网络，版权归各位所有                         #"
+echo "#                                                         #"
+echo "###########################################################"
+echo "                                                           "
 echo "请选择您需要的程序:"
 echo "  1) 加速系列：Bbr系列、锐速"
 echo "  2) KCPtun"
